@@ -1,5 +1,5 @@
 {
-  "author" : "Frank Kolodziej",
+  "author" : "Frank Kolodziej, Philipp Lehmann",
   "commands" : [
     {
       "script" : "arrange_artboards.cocoascript",
@@ -25,16 +25,30 @@
     {
       "script" : "select_artboards.cocoascript",
       "handler": "select_prev",
-      "shortcut" : "command shift [",
+      "shortcut" : "command shift ,",
       "name" : "Select Previous Artboard",
       "identifier" : "901_select_prev_artboard"
     },
     {
       "script" : "select_artboards.cocoascript",
+      "handler": "select_prev_zoom",
+      "shortcut" : "command shift alt ,",
+      "name" : "Select Previous Artboard and Zoom",
+      "identifier" : "902_select_prev_artboard_and_zoom"
+    },
+    {
+      "script" : "select_artboards.cocoascript",
       "handler": "select_next",
-      "shortcut" : "command shift ]",
+      "shortcut" : "command shift .",
+      "name" : "Select Next Artboard and Zoom",
+      "identifier" : "903_select_next_artboard"
+    },
+    {
+      "script" : "select_artboards.cocoascript",
+      "handler": "select_next_zoom",
+      "shortcut" : "command shift alt .",
       "name" : "Select Next Artboard",
-      "identifier" : "902_select_next_artboard"
+      "identifier" : "904_select_next_artboard_and_zoom"
     }
   ],
   "menu" : {
@@ -43,7 +57,9 @@
       "201_group_artboards",
       "900_fit_artboard",
       "901_select_prev_artboard",
-      "902_select_next_artboard"
+      "902_select_prev_artboard_and_zoom",
+      "903_select_next_artboard",
+      "904_select_next_artboard_and_zoom"
     ],
     "title" : "Artboard Tools"
   },
